@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.FenFXML_GenerPDFController">
+    <children>
+        <TableView fx:id="ListeInscrits" layoutX="14.0" layoutY="70.0" prefHeight="382.0" prefWidth="664.0">
+            <columns>
+        <TableColumn fx:id="colonneNom" prefWidth="99.0" text="Nom" />
+        <TableColumn fx:id="colonneAdresse" prefWidth="164.0" text="Adresse" />
+        <TableColumn fx:id="colonneCP" prefWidth="94.0" text="Code Postal" />
+        <TableColumn fx:id="colonneVille" prefWidth="124.0" text="Ville" />
+        <TableColumn fx:id="colonneEmail" prefWidth="182.0" text="Mail" />
+    </columns>
+        </TableView>
+      <Label layoutX="153.0" layoutY="14.0" prefHeight="41.0" prefWidth="386.0" style="-fx-font-size: 33.0;" text="Clients inscrits à la session" textAlignment="CENTER" />
+      <Button id="btngenerPDF" fx:id="btngenerPDF" layoutX="100.0" layoutY="453.0" mnemonicParsing="false" onAction="#handleGenerPDF" prefHeight="65.0" prefWidth="492.0" text="Générer le PDF">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

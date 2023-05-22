@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.FenFXML_GestionSessionController">
+   
+    <children>
+        <TableView fx:id="tableSessions" layoutX="12.0" layoutY="40.0" prefHeight="378.0" prefWidth="542.0">
+            <columns>
+        <TableColumn fx:id="colonneId" prefWidth="50.0" text="ID" />
+        <TableColumn fx:id="colonneLibFormation" prefWidth="150.0" text="Libellé Formation" />
+        <TableColumn fx:id="colonneDateDebut" prefWidth="160.0" text="Date de début" />
+        <TableColumn fx:id="colonneNbPlaces" prefWidth="90.0" text="Nb places" />
+        <TableColumn fx:id="colonneNbInscrits" prefWidth="90.0" text="Nb inscrits" />  
+    </columns>
+        </TableView>
+         <Button id="btnPDF" fx:id="btnPDF" layoutX="35.0" layoutY="434.0" mnemonicParsing="false" onAction="#handleGestionPDF" prefHeight="65.0" prefWidth="492.0" text="Affichage avant PDF" visible="false" />
+    </children>
+</AnchorPane>
